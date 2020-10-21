@@ -6,39 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="css/exo4.css" rel="stylesheet">
 </head>
-<body onLoad="hideDance(); hideImage();">
-    <script>
-    var audio = new Audio("https://gabmlld.github.io/conga/Conga.mp3" ) ;
-
-    audio.oncanplaythrough = function(){
-    audio.play();
-    }
-
-    audio.loop = true;
-
-    audio.onended = function(){
-    audio.play();
-    }
-        function hideImage() {
-  var x = document.getElementById("bouton");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-        
-        function hideDance() {
-  var y = document.getElementById("conga");
-  y.style.display = "none";
-        }
-        
-        function showDance() {
-  var y = document.getElementById("conga");
-  y.style.display = "block";
-        }
-        
-    </script>
+<body onLoad="hideDance();">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
         body {
@@ -81,5 +50,38 @@
         <img src="https://ekladata.com/5fAIkVlQljWYnZNf44Wr00K3u7Y.gif" style="width:150px; height:150px; float:left;">
         <img src="https://ekladata.com/5fAIkVlQljWYnZNf44Wr00K3u7Y.gif" style="width:150px; height:150px; float:right;">
     </div>
+	
+	<script>
+    var audio = new Audio("https://gabmlld.github.io/conga/Conga.mp3" ) ;
+
+    audio.oncanplaythrough = function(){
+    audio.play();
+    }
+
+    audio.loop = true;
+
+    audio.onended = function(){
+    audio.play();
+    }
+        function hideImage() {
+  var x = document.getElementById("bouton");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+        
+        function hideDance() {
+  var y = document.getElementById("conga");
+  y.style.display = "none";
+        }
+        
+        function showDance() {
+  var y = document.getElementById("conga");
+  y.style.display = "block";
+        }
+        
+    </script>
 </body>
 </html>
